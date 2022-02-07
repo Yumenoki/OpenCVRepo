@@ -333,6 +333,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceLocation: {x: 0, y: 0}
+  faceCascade: {fileID: 4900000, guid: 48039dc7a7c86d448bfb389ec2a93727, type: 3}
+  eyes: {fileID: 4900000, guid: ef33522049975164c91e5aea00ccf3f5, type: 3}
+  shapes: {fileID: 4900000, guid: 79e677bfa129d5b4d95a576717668a42, type: 3}
 --- !u!114 &790966958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,7 +497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1282480076
 Transform:
   m_ObjectHideFlags: 0
@@ -523,6 +526,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceLocation: {x: 0, y: 0}
+  faceCascade: {fileID: 0}
+  eyes: {fileID: 0}
+  shapes: {fileID: 0}
 --- !u!1 &1292327879
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1845537071
 MonoBehaviour:
   m_ObjectHideFlags: 0
