@@ -1,0 +1,125 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.7f1 (c53830e277f1) revision 12924976'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1526; Version 2009; 64bit' Language: 'de' Physical Memory: 7597 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\2020.2.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/pc/Desktop/Erik/Ricarda/FaceRig/OpenCVRepo
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51533
+Successfully changed project path to: C:/Users/pc/Desktop/Erik/Ricarda/FaceRig/OpenCVRepo
+C:/Users/pc/Desktop/Erik/Ricarda/FaceRig/OpenCVRepo
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 46.06 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.7f1 (c53830e277f1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/pc/Desktop/Erik/Ricarda/FaceRig/OpenCVRepo/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x2192)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   30.0.15.1123
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/2020.2.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56144
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001829 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 46.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.983 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001718 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2828 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.5 MB.
+System memory in use after: 124.7 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3264.
+Total: 2.792300 ms (FindLiveObjects: 0.438600 ms CreateObjectMapping: 0.213100 ms MarkObjects: 2.063200 ms  DeleteObjects: 0.076500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/OpenCV+Unity/Demo/Tracking/TrackingScene.unity
+  artifactKey: Guid(111a9059ba67efb47a099e5ffbe159c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenCV+Unity/Demo/Tracking/TrackingScene.unity using Guid(111a9059ba67efb47a099e5ffbe159c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a988f8eeea2bc61c6ff864e15fc21b') in 0.018646 seconds
+  Import took 0.023786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/OpenCV+Unity/Demo/Tracking
+  artifactKey: Guid(300ac88ee21edaa42bb2acf1b18de8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenCV+Unity/Demo/Tracking using Guid(300ac88ee21edaa42bb2acf1b18de8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae2fb68fc548119bf9fa4d4013e0802') in 0.007980 seconds
+  Import took 0.012637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.537405 seconds.
+  path: Assets/OpenCV+Unity/Demo/Tracking/TrackingScript.cs
+  artifactKey: Guid(d9c127e7c19b22545ad0778c358d5b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OpenCV+Unity/Demo/Tracking/TrackingScript.cs using Guid(d9c127e7c19b22545ad0778c358d5b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001c2dd9e7fbd7079ccbc34990298474') in 0.018006 seconds
+  Import took 0.022707 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001659 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.815 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2719 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.7 MB.
+System memory in use after: 119.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3267.
+Total: 2.799200 ms (FindLiveObjects: 0.318700 ms CreateObjectMapping: 0.196600 ms MarkObjects: 2.256700 ms  DeleteObjects: 0.026000 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

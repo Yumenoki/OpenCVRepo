@@ -332,6 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c367594b95ef2ce4ea3968e3198576e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  webCamIndex: 1
   faceLocation: {x: 0, y: 0}
   faceCascade: {fileID: 4900000, guid: 48039dc7a7c86d448bfb389ec2a93727, type: 3}
   eyes: {fileID: 4900000, guid: ef33522049975164c91e5aea00ccf3f5, type: 3}
@@ -525,6 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c367594b95ef2ce4ea3968e3198576e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  webCamIndex: 0
   faceLocation: {x: 0, y: 0}
   faceCascade: {fileID: 0}
   eyes: {fileID: 0}

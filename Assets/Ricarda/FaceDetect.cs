@@ -2,14 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using OpenCvSharp;
 using OpenCvSharp.Demo;
 using UnityEngine.Diagnostics;
 using UnityEngine.UI;
 using Rect = OpenCvSharp.Rect;
+using System.IO;
+
 
 public class FaceDetect : MonoBehaviour
 {
+    public int webCamIndex = 0;
     private WebCamTexture _webCamTexture;
     private CascadeClassifier cascade; //der ObjectDetector
     private OpenCvSharp.Rect myFace;
@@ -22,12 +26,19 @@ public class FaceDetect : MonoBehaviour
     public TextAsset eyes;
     public TextAsset shapes;
     //private FaceProcessorLive<WebCamTexture> landmarks; 
-    private ShapePredictor predictor;
+    private ShapePredictor sp;
+    private ShapePredictor lol;
+
+    //private Mat grayMat;
+    //private VectorOfPoint2f shapeInFace;
+    //private Ptr<ShapePredictor> facemark;
+    
+
     private void Start()
     {
         //Webcambild in Webcam Textur speichern
         WebCamDevice[] devices = WebCamTexture.devices;
-        _webCamTexture = new WebCamTexture(devices[0].name);
+        _webCamTexture = new WebCamTexture(devices[webCamIndex].name);
         _webCamTexture.Play();
 
         //FaceDetection xml  
@@ -37,18 +48,14 @@ public class FaceDetect : MonoBehaviour
 
         //landmarks = new FaceProcessorLive<WebCamTexture>();
         //landmarks.Initialize(faceCascade.text, eyes.text, shapes.bytes);
-        
-        predictor = new ShapePredictor();
-        predictor.LoadData(shapeDat);
+     
+        sp = new ShapePredictor();
+        sp.LoadData(shapeDat);
         
     }
 
     void Update()
     {
-        //Webcam Bild auf UI Bild abbilden
-        //gameObject.GetComponent<RawImage>().texture = _webCamTexture;
-        
-        
         //aus Webcam Textur OpenCV-Material machen, um current frame zum auswerten zu speichern
         Mat frame = OpenCvSharp.Unity.TextureToMat(_webCamTexture);
         findNewFace(frame);
@@ -57,6 +64,9 @@ public class FaceDetect : MonoBehaviour
 
     void findNewFace(Mat frame)
     {
+        //frame schwarzweiß machen
+        //Cv2.CvtColor(frame, grayMat, ColorConversionCodes.BGR2GRAY);
+       
         var faces = cascade.DetectMultiScale(frame, 1.1, 2, HaarDetectionType.ScaleImage);
         
         if (faces.Length == 1)
@@ -70,10 +80,17 @@ public class FaceDetect : MonoBehaviour
 
     void findLandmarks(Mat frame, Rect face)
     {
+
+        //predictor in NumPy array umwandeln??  
+
         //landmarks.MarkDetected();
         
-        mouth.X = predictor.DetectLandmarks(frame, myFace)[63].X;
-        mouth.Y = predictor.DetectLandmarks(frame, myFace)[63].Y;
+        if (sp.DetectLandmarks(frame, face)[63] != null)
+        {           
+            mouth.X = sp.DetectLandmarks(frame, face)[63].X;
+            mouth.Y = sp.DetectLandmarks(frame, face)[63].Y;
+        }
+
     }
 
     void display(Mat frame)
